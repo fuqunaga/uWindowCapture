@@ -1,0 +1,10 @@
+{
+    "name": "ga.fuquna.uwindowcapture",
+    "displayName": "uWindowCapture",
+    "version": "7.0.0",
+    "unity": "2019.3",
+    "description": "asset to capture windows and make them available in Unity as Texture2D. forked from https://github.com/hecomi/uWindowCapture",
+    "keywords": ["Tool", "Window", "Capture"],
+    "category": "Tool",
+    "dependencies": { }
+}
