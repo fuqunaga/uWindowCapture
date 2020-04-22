@@ -137,7 +137,17 @@ public class UwcManager : MonoBehaviour
     void OnApplicationQuit()
     {
         Resources.UnloadUnusedAssets();
+#if UNITY_EDITOR
+        // Delay call Lib.Finalize().
+        // For avoiding to hang up at PlayMode ends when capturing and displaying the UnityEditor window itself.
+        System.Threading.ThreadPool.QueueUserWorkItem(_ =>
+        {
+            System.Threading.Thread.Sleep(100);
+            Lib.Finalize();
+        });
+#else
         Lib.Finalize();
+#endif
     }
 
     void OnEnable()
