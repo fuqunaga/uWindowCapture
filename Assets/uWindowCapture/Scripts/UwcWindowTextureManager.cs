@@ -7,7 +7,7 @@ namespace uWindowCapture
 
 public class UwcWindowTextureManager : MonoBehaviour
 {
-    [SerializeField] GameObject windowPrefab;
+    [SerializeField] GameObject windowPrefab = default;
 
     Dictionary<int, UwcWindowTexture> windows_ = new Dictionary<int, UwcWindowTexture>();
     public Dictionary<int, UwcWindowTexture> windows

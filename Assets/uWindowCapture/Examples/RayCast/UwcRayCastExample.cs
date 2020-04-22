@@ -7,6 +7,7 @@ namespace uWindowCapture
 
 public class UwcRayCastExample : MonoBehaviour
 {
+#pragma warning disable 649
     [SerializeField]
     Transform from;
 
@@ -21,8 +22,9 @@ public class UwcRayCastExample : MonoBehaviour
 
     [SerializeField]
     Vector2 desktopCoord;
+#pragma warning restore 649
 
-    void Update()
+        void Update()
     {
         var from2to = to.position - from.position;
         var dir = from2to.normalized;
