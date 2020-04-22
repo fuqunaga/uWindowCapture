@@ -65,7 +65,7 @@ public struct Point
 
 public static class Lib
 {
-    public const string name = "uWindowCapture";
+    public const string name = "uWindowCapturePlugin";
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate void DebugLogDelegate(string str);
