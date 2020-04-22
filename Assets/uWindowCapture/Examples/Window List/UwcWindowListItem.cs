@@ -8,13 +8,16 @@ namespace uWindowCapture
 public class UwcWindowListItem : MonoBehaviour 
 {
     Image image_;
+#pragma warning disable 649
     [SerializeField] Color selected;
     [SerializeField] Color notSelected;
+#pragma warning restore 649
 
     public UwcWindow window { get; set; }
     public UwcWindowList list { get; set; }
     public UwcWindowTexture windowTexture { get; set; }
-    
+
+#pragma warning disable 649
     [SerializeField] RawImage icon;
     [SerializeField] Text title;
     [SerializeField] Text x;
@@ -23,6 +26,7 @@ public class UwcWindowListItem : MonoBehaviour
     [SerializeField] Text width;
     [SerializeField] Text height;
     [SerializeField] Text status;
+#pragma warning restore 649
 
     void Awake()
     {

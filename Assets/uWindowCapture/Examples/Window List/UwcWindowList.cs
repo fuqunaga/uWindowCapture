@@ -6,8 +6,10 @@ namespace uWindowCapture
 
 public class UwcWindowList : MonoBehaviour 
 {
+#pragma warning disable 649
     [SerializeField] GameObject windowListItem;
     [SerializeField] Transform listRoot;
+#pragma warning restore 649
 
     public UwcWindowTextureManager windowTextureManager;
 
