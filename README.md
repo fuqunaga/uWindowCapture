@@ -13,9 +13,17 @@ Screenshots
 <img src="https://raw.githubusercontent.com/wiki/hecomi/uWindowCapture/window-manager.gif" width="720" />
 
 
-Installation
+Installation via package file
 ------------
 Please download the latest *uWindowCapture.unitypackage* from the [release page](https://github.com/hecomi/uWindowCapture/releases).
+
+
+Installation via UPM(>Unity2019.3)
+------------
+Add the following address to UPM.
+```
+https://github.com/fuqunaga/uWindowCapture.git?path=/Assets/uWindowCapture
+```
 
 
 License
